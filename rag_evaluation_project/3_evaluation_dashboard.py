@@ -22,7 +22,7 @@ from deepeval.models.base_model import DeepEvalBaseLLM
 import warnings
 warnings.filterwarnings("ignore")
 
-load_dotenv()
+load_dotenv(override=True)
 
 # ==========================================
 # 1. APP STATE & CONFIGURATION
@@ -78,6 +78,7 @@ class GroqFallbackLLM(DeepEvalBaseLLM):
                     else:
                         return llm.invoke(prompt).content
                 except Exception as e:
+                    print(f"      [!] Key {key[:8]}... failed: {e}")
                     continue # Instantly try the next key
             
             # If the code reaches this line, ALL 4 KEYS ARE EXHAUSTED.
@@ -286,8 +287,8 @@ with tab2:
                 progress_bar = st.progress(0)
                 status_text = st.empty()
                 
-                # THE FIX: Upgraded to 70B model for flawless JSON structuring during grading
-                evaluator_llm_judge = GroqFallbackLLM("llama-3.3-70b-versatile")
+                # THE FIX: Changed to 8B model to handle massive TPD limits for 1000+ questions
+                evaluator_llm_judge = GroqFallbackLLM("llama-3.1-8b-instant")
                 generator_llm = GroqFallbackLLM("llama-3.1-8b-instant")
                 
                 current_results = st.session_state.eval_results

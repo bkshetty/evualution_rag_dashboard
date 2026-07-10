@@ -31,7 +31,7 @@ from deepeval.metrics import AnswerRelevancyMetric, ContextualPrecisionMetric, F
 from deepeval.models.base_model import DeepEvalBaseLLM
 
 # Load environment variables
-load_dotenv()
+load_dotenv(override=True)
 
 class GroqFallbackLLM(DeepEvalBaseLLM):
     """DeepEval LLM Wrapper with API key rotation and rate limit backoff."""
@@ -65,6 +65,7 @@ class GroqFallbackLLM(DeepEvalBaseLLM):
                         return llm.invoke(prompt).content
                 except Exception as e:
                     # Swapping keys immediately on exception
+                    print(f"      [!] Key {key[:8]}... failed: {e}")
                     continue
             
             print("All API Keys Rate-Limited. Entering 65-second cooldown...")
@@ -352,8 +353,8 @@ def main():
         except Exception as e:
             print(f"[-] Error loading checkpoint: {e}")
 
-    # Initialize LLMs
-    evaluator_llm_judge = GroqFallbackLLM("llama-3.3-70b-versatile")
+    # Initialize LLMs (Uses 8B model to handle massive TPD limits for 1000+ questions)
+    evaluator_llm_judge = GroqFallbackLLM("llama-3.1-8b-instant")
     generator_llm = GroqFallbackLLM("llama-3.1-8b-instant")
 
     # 4. Main Evaluation Loop
