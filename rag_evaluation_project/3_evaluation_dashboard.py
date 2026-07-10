@@ -287,8 +287,8 @@ with tab2:
                 progress_bar = st.progress(0)
                 status_text = st.empty()
                 
-                # THE FIX: Changed to 8B model to handle massive TPD limits for 1000+ questions
-                evaluator_llm_judge = GroqFallbackLLM("llama-3.1-8b-instant")
+                # THE FIX: Generator stays 8B for speed. Judge MUST be 70B to prevent JSON Tool crashes.
+                evaluator_llm_judge = GroqFallbackLLM("llama-3.3-70b-versatile")
                 generator_llm = GroqFallbackLLM("llama-3.1-8b-instant")
                 
                 current_results = st.session_state.eval_results

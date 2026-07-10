@@ -353,8 +353,8 @@ def main():
         except Exception as e:
             print(f"[-] Error loading checkpoint: {e}")
 
-    # Initialize LLMs (Uses 8B model to handle massive TPD limits for 1000+ questions)
-    evaluator_llm_judge = GroqFallbackLLM("llama-3.1-8b-instant")
+    # Initialize LLMs (Generator is 8B to save tokens, Judge is 70B to prevent tool_use_failed crashes)
+    evaluator_llm_judge = GroqFallbackLLM("llama-3.3-70b-versatile")
     generator_llm = GroqFallbackLLM("llama-3.1-8b-instant")
 
     # 4. Main Evaluation Loop
