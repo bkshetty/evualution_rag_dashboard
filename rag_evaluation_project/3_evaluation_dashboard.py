@@ -71,7 +71,8 @@ class GroqFallbackLLM(DeepEvalBaseLLM):
                     # max_retries=0 forces it to fail instantly so we can swap keys faster
                     llm = ChatGroq(api_key=key, model_name=self.model_name, temperature=0, max_retries=0)
                     if schema:
-                        structured_llm = llm.with_structured_output(schema)
+                        # THE FIX: Force 'json_mode' to prevent Groq from using buggy XML Tool Calling
+                        structured_llm = llm.with_structured_output(schema, method="json_mode")
                         result = structured_llm.invoke(prompt)
                         if result is None: continue 
                         return result
@@ -390,7 +391,7 @@ with tab3:
         qual_metrics = ["Answer Accuracy", "Retrieval Precision", "Hallucination Reduction"]
         
         st.subheader("📋 Raw Evaluation Data")
-        st.dataframe(df_res, use_container_width=True)
+        st.dataframe(df_res, width="stretch")
         
         view = st.radio("Select Analysis Perspective:", [
             "1. Baseline vs RAG Architectures", 
@@ -410,11 +411,11 @@ with tab3:
             with c1:
                 st.subheader("Quality Metrics")
                 fig_qual = px.bar(melted_sys, x="Metric", y="Score", color="Architecture", barmode="group", text_auto=".3f", range_y=[1, 5])
-                st.plotly_chart(fig_qual, use_container_width=True)
+                st.plotly_chart(fig_qual, width="stretch")
             with c2:
                 st.subheader("Latency")
                 fig_time = px.bar(sys_avg, x="Architecture", y="Response Time (s)", color="Architecture", text_auto=".2f")
-                st.plotly_chart(fig_time, use_container_width=True)
+                st.plotly_chart(fig_time, width="stretch")
                 
             st.subheader("🕸️ Architecture Capabilities Matrix")
             fig_radar = go.Figure()
@@ -425,7 +426,7 @@ with tab3:
                     fill='toself', name=row["Architecture"]
                 ))
             fig_radar.update_layout(polar=dict(radialaxis=dict(visible=True, range=[1, 5])), height=500)
-            st.plotly_chart(fig_radar, use_container_width=True)
+            st.plotly_chart(fig_radar, width="stretch")
                 
         elif "Component" in view:
             rag_only = df_res[df_res["System Type"] == "With RAG"]
@@ -437,14 +438,14 @@ with tab3:
                 with t1:
                     chunk_avg = rag_only.groupby("Chunking")[qual_metrics].mean().reset_index()
                     fig_c = px.bar(chunk_avg.melt(id_vars="Chunking", value_vars=qual_metrics), x="Chunking", y="value", color="variable", barmode="group", text_auto=".2f", range_y=[1, 5])
-                    st.plotly_chart(fig_c, use_container_width=True)
+                    st.plotly_chart(fig_c, width="stretch")
                 
                 with t2:
                     embed_avg = rag_only.groupby("Embedding")[qual_metrics].mean().reset_index()
                     fig_e = px.bar(embed_avg.melt(id_vars="Embedding", value_vars=qual_metrics), x="Embedding", y="value", color="variable", barmode="group", text_auto=".2f", range_y=[1, 5])
-                    st.plotly_chart(fig_e, use_container_width=True)
+                    st.plotly_chart(fig_e, width="stretch")
                     
                 with t3:
                     db_avg = rag_only.groupby("Database")[qual_metrics].mean().reset_index()
                     fig_db = px.bar(db_avg.melt(id_vars="Database", value_vars=qual_metrics), x="Database", y="value", color="variable", barmode="group", text_auto=".2f", range_y=[1, 5])
-                    st.plotly_chart(fig_db, use_container_width=True)
+                    st.plotly_chart(fig_db, width="stretch")

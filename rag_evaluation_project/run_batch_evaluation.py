@@ -56,7 +56,8 @@ class GroqFallbackLLM(DeepEvalBaseLLM):
                     # max_retries=0 forces it to fail instantly so we can swap keys faster
                     llm = ChatGroq(api_key=key, model_name=self.model_name, temperature=0, max_retries=0)
                     if schema:
-                        structured_llm = llm.with_structured_output(schema)
+                        # THE FIX: Force 'json_mode' to prevent Groq from using buggy XML Tool Calling
+                        structured_llm = llm.with_structured_output(schema, method="json_mode")
                         result = structured_llm.invoke(prompt)
                         if result is None:
                             continue
