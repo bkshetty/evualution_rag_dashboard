@@ -1,0 +1,10 @@
+{
+    "Without RAG (Baseline)|None|None|None": [
+        "0",
+        "1"
+    ],
+    "With RAG|Fixed|SentenceTransformers|FAISS": [
+        "0",
+        "1"
+    ]
+}

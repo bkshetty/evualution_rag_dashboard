@@ -1,0 +1,27 @@
+# Environments
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Databases and heavy binary outputs
+rag_evaluation_project/databases/
+rag_evaluation_project/.deepeval/
+rag_evaluation_project/evaluation_progress.json
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store

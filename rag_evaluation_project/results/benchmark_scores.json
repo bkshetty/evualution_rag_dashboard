@@ -1,0 +1,8 @@
+{
+    "Without_RAG_Baseline": {
+        "answer_accuracy": 0.125,
+        "retrieval_precision": 0.0,
+        "hallucination_reduction": 0.221,
+        "response_time": 0.85
+    }
+}

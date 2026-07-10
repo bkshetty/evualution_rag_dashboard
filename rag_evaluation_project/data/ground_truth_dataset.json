@@ -1,0 +1,502 @@
+[
+    {
+        "question": "Given the vectors Work and Finish of length m and n respectively, and the condition that if Allocationi \u2260 0, then Finish[i] = false, what is the value of i in step 2 of the Detection Algorithm if Requesti = 10 and Work = 15?",
+        "context": "ch8.pdf",
+        "ground_truth": "i = 1 (since Request1 \u2264 Work and Finish[1] = false)"
+    },
+    {
+        "question": "What is the primary difference between the Three-Way Handshake and the Two-Way Handshake in the TCP connection establishment process?",
+        "context": "Elements of Transport Protocols: Connection Establishment",
+        "ground_truth": "The primary difference between the Three-Way Handshake and the Two-Way Handshake is that the Three-Way Handshake involves a SYN packet sent by the client, a SYN-ACK packet sent by the server, and an ACK packet sent by the client to confirm the connection, whereas the Two-Way Handshake involves a single packet exchange between the client and server."
+    },
+    {
+        "question": "What action does the client take if the server indicates it is not prepared to receive mail during the initial message transfer in the BLM431 Computer Networks protocol?",
+        "context": "BLM431 Computer Networks, 7.2.4. Message Transfer",
+        "ground_truth": "The client releases the connection and tries again later."
+    },
+    {
+        "question": "What is an example of a physical communication link that can be used for inter-process communication in an operating system?",
+        "context": "Silberschatz, Galvin and Gagne 2018, ch3.pdf",
+        "ground_truth": "A hardware bus"
+    },
+    {
+        "question": "What is the primary reason why Nagle's algorithm is disabled in certain scenarios, such as when an X Windows application is being run over the Internet?",
+        "context": "TCP Performance Degradation",
+        "ground_truth": "To prevent the mouse cursor from moving erratically due to delayed transmission of mouse movements, which are typically sent one byte at a time."
+    },
+    {
+        "question": "What is the primary function of the Source Address field in the IPv4 header, and how does it contribute to the overall addressing mechanism in the transport layer?",
+        "context": "Elements of Transport Protocols: Addressing",
+        "ground_truth": "The Source Address field in the IPv4 header contains the IP address of the sending device, which is used to identify the source of the packet and ensure that responses are sent back to the correct device. This field contributes to the overall addressing mechanism in the transport layer by enabling the destination device to identify the sender and initiate a connection, thereby facilitating reliable data transfer."
+    },
+    {
+        "question": "What are the possible data types for the 'Value' field in a Resource Record, according to the BLM431 Computer Networks course material?",
+        "context": "BLM431 Computer Networks, Dr.Refik Samet, 7.1.2. Resource Records",
+        "ground_truth": "The 'Value' field can be a number, a domain name, or an ASCII string."
+    },
+    {
+        "question": "Given a Department entity with a one-to-many relationship with Employee entities, what is the correct SQL syntax to establish this relationship in a database schema?",
+        "context": "Presentation2 (2).pdf",
+        "ground_truth": "CREATE TABLE Department (id INT PRIMARY KEY, name VARCHAR(255)); CREATE TABLE Employee (id INT PRIMARY KEY, department_id INT, FOREIGN KEY (department_id) REFERENCES Department(id));"
+    },
+    {
+        "question": "What are the two primary services provided by the Transport Service to the upper layers, as per the OSI model?",
+        "context": "Transport Service, OSI model, Upper Layers",
+        "ground_truth": "The two primary services provided by the Transport Service to the upper layers are: (a) Segmentation and Reassembly, and (b) Delivery of Segments in the correct order."
+    },
+    {
+        "question": "In a UDP client-server scenario, such as DNS resolution, what is the primary purpose of the source port in the UDP header?",
+        "context": "UDP pptx.pdf",
+        "ground_truth": "The primary purpose of the source port in the UDP header is to enable the server to send a reply back to the source, allowing the client to identify the intended recipient of the response."
+    },
+    {
+        "question": "What is the primary difference between a process and a thread in the context of the operating system?",
+        "context": "ch3.pdf",
+        "ground_truth": "A process is a separate entity with its own memory space, whereas a thread shares the same memory space as its parent process."
+    },
+    {
+        "question": "What is the maximum sustainable data rate in bytes per second for a token bucket scheme where a new token is added every 5 \u03bcsec and each token is good for one short packet containing 48 bytes of data?",
+        "context": "Token bucket scheme for traffic shaping",
+        "ground_truth": "The maximum sustainable data rate is calculated as (1 token / 5 \u03bcsec) * 48 bytes/token * (10^6 \u03bcsec / 1 sec) = 960,000 bytes/sec"
+    },
+    {
+        "question": "In the context of deadlock prevention, which of the four necessary conditions for deadlock should be invalidated to allow for higher resource utilization and prevent starvation?",
+        "context": "ch8.pdf",
+        "ground_truth": "Hold and Wait \u2013 must guarantee that whenever a thread requests a resource, it does not hold any other resources should be invalidated, allowing threads to request resources while holding other resources, thus increasing resource utilization and preventing starvation."
+    },
+    {
+        "question": "What improvement did Demers et al. (1990) suggest to address the unfairness in packet scheduling towards hosts using small packets?",
+        "context": "3. Packet Scheduling Fair queuing Problem",
+        "ground_truth": "They suggested simulating a byte-by-byte round robin instead of a packet-by-packet round robin."
+    },
+    {
+        "question": "What is the primary mechanism by which the Random Early Detection (RED) algorithm prevents network congestion in the Internet?",
+        "context": "Example of Internet congestion algorithm",
+        "ground_truth": "The primary mechanism by which RED prevents network congestion is through the use of a probabilistic discard of packets when the average queue size exceeds a predetermined threshold, thereby preventing the network from becoming overly congested and reducing the likelihood of global synchronization."
+    },
+    {
+        "question": "What are the two flavors of top-level domains in the DNS name space?",
+        "context": "BLM431 Computer Networks, Chapter 7.1.1",
+        "ground_truth": "generic and country-code top-level domains"
+    },
+    {
+        "question": "What is the primary difference between the explicit and implicit approaches in closed-loop congestion control solutions?",
+        "context": "6-1 Closed Loop Solutions (1).pdf",
+        "ground_truth": "The explicit approach involves sending special packets back to the sources to curtail congestion, whereas the implicit approach relies on the source making local observations to deduce the existence of congestion."
+    },
+    {
+        "question": "What is the length of the address in IPv6, as specified in the standard?",
+        "context": "The Network Layer in the Internet: IPv6 Controversies",
+        "ground_truth": "16 bytes"
+    },
+    {
+        "question": "What is the primary mechanism behind feedback-based flow control in computer networks?",
+        "context": "Flow Control, Feedback-based flow control, 28",
+        "ground_truth": "The primary mechanism behind feedback-based flow control in computer networks is the use of congestion avoidance algorithms, such as TCP's slow-start and congestion avoidance algorithms, which adjust the sender's transmission rate based on feedback from the receiver about network congestion."
+    },
+    {
+        "question": "Given that the receiver can immediately handle any frame it receives in an Unrestricted Simplex Protocol with an error-free channel, what is the maximum number of frames that can be sent by the sender before the receiver acknowledges receipt of the previous frame?",
+        "context": "DCN PPT till 286 MSE1.pdf",
+        "ground_truth": "The maximum number of frames is theoretically unbounded, but practically, it is limited by the sender's buffer size and the receiver's ability to process frames in real-time."
+    },
+    {
+        "question": "What is the sequence of socket primitives used in Berkeley UNIX for establishing a TCP connection?",
+        "context": "Berkeley Sockets set of transport primitives",
+        "ground_truth": "The sequence of socket primitives used in Berkeley UNIX for establishing a TCP connection is: socket(), bind(), listen(), accept(), connect()"
+    },
+    {
+        "question": "What is the maximum allowed length for a full path name in the DNS namespace, considering the maximum length of a component name?",
+        "context": "7.1.1. The DNS Name Space",
+        "ground_truth": "255 characters"
+    },
+    {
+        "question": "Given a database schema with six tables, what is the maximum number of possible join operations between these tables, assuming each table has a unique primary key and foreign key relationships are established between tables?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "The maximum number of possible join operations is 2^6 - 2 = 62, where 2^6 represents the total number of possible combinations of the six tables, and subtracting 2 accounts for the cases where no tables are joined (i.e., the empty join) and all tables are joined (i.e., the full join)"
+    },
+    {
+        "question": "Given a query with a constant value of 41, what is the optimal index structure for a database table with a column 'id' of type integer, assuming a uniform distribution of values and a query selectivity of 10%?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "A B-tree index with a page size of 4096 bytes and a branching factor of 100 would be the optimal index structure, as it would allow for efficient range queries and minimize the number of disk I/O operations."
+    },
+    {
+        "question": "Given the relation R(A,B,C,D,E,F) with functional dependencies F: E->A, E->D, A->C, A->D, AE->F, AG->K, find the closure of E+.",
+        "context": "FD and Normalization (1).pdf",
+        "ground_truth": "The closure of E+ is {E, A, D, C, F, K} because E+ includes all attributes that are functionally dependent on E, which are A and D, and also includes attributes that are functionally dependent on A and E, which are C, F, and K."
+    },
+    {
+        "question": "What are the reserved special IP address forms defined by the IP protocol?",
+        "context": "Special IP Addresses",
+        "ground_truth": "The reserved special IP address forms defined by the IP protocol include loopback addresses (127.0.0.0/8), reserved addresses (0.0.0.0/8 and 255.255.255.255/32), and the broadcast address (255.255.255.255/32), among others."
+    },
+    {
+        "question": "What is an example of a P2P file sharing application mentioned in the context of Home Network Applications?",
+        "context": "Olum-Fonoon Babol H. Veisi Fall 2005 Page 10",
+        "ground_truth": "Kazaa"
+    },
+    {
+        "question": "What is the primary advantage of the connectionless internetworking model over the virtual-circuit model in terms of network resource utilization?",
+        "context": "Connectionless Internetworking",
+        "ground_truth": "The connectionless internetworking model achieves a higher bandwidth than the virtual-circuit model because it allows multiple routes, thereby utilizing network resources more efficiently."
+    },
+    {
+        "question": "What is a primary demerit of connectionless internetworking protocols?",
+        "context": "Connectionless Internetworking",
+        "ground_truth": "more potential for congestion"
+    },
+    {
+        "question": "Given the need matrix Need = Max \u2013 Allocation, where Need is defined as follows: A B C T0 7 4 3 T1 1 2 2 T2 6 0 0 T3 0 1 1 T4 4 3 1, and the safe sequence < T1, T3, T4, T2, T0>, what is the maximum number of time units that can be allocated to process T2 before the system enters an unsafe state?",
+        "context": "ch8.pdf",
+        "ground_truth": "1"
+    },
+    {
+        "question": "Given two union-compatible relations, R1 and R2, with the same attributes in the same order, what is the result of the INTERSECT operation on R1 and R2, where R1 contains the tuples (1, 'John'), (2, 'Jane'), and (3, 'Bob'), and R2 contains the tuples (2, 'Jane'), (3, 'Bob'), and (4, 'Alice')?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "The result of the INTERSECT operation on R1 and R2 is a relation containing the tuples (2, 'Jane') and (3, 'Bob'), as these are the only tuples common to both R1 and R2."
+    },
+    {
+        "question": "What is the primary difference between routing and forwarding in a network, and how do they interact with each other?",
+        "context": "Forwarding v/s Routing",
+        "ground_truth": "Routing involves making decisions on which routes to use and updating routing tables, whereas forwarding is the process of looking up the outgoing line to use for a packet in the routing tables when it arrives."
+    },
+    {
+        "question": "What is the primary purpose of the Contributing source identifiers field in an RTP packet, especially in the presence of mixers in the studio?",
+        "context": "RTP packet fields and RTCP protocol",
+        "ground_truth": "The Contributing source identifiers field is used to list the streams being mixed when a mixer is present in the studio, with the mixer being the synchronizing source."
+    },
+    {
+        "question": "What is the primary responsibility of the Browser process in the Google Chrome Browser multiprocess architecture?",
+        "context": "Silberschatz, Galvin and Gagne 2018, ch3.pdf",
+        "ground_truth": "The Browser process manages the user interface, disk and network I/O in the Google Chrome Browser multiprocess architecture."
+    },
+    {
+        "question": "Given a leaky bucket algorithm with a bucket size of 1MB and an output rate of 2MB/sec, and a data arrival rate of 25MB/sec for 40msec every second, what is the maximum burst size that can be accommodated by the leaky bucket without overflowing?",
+        "context": "Leaky Bucket Example",
+        "ground_truth": "To calculate the maximum burst size, we need to calculate the maximum amount of data that can be stored in the bucket during the 40msec period. The bucket size is 1MB, and the output rate is 2MB/sec, so the bucket will be empty after 0.5 seconds (1MB / 2MB/sec). During the 40msec period, the bucket will store (40msec / 1000msec) * 1MB = 0.04MB of data. However, the data arrival rate is 25MB/sec for 40msec, so the total amount of data that arrives during this period is (40msec / 1000msec) * 25MB = 1MB. Therefore, the maximum burst size that can be accommodated by the leaky bucket without overflowing is 1MB - 0.04MB = 0.96MB."
+    },
+    {
+        "question": "What is the primary function of RTCP in relation to RTP, according to the provided context?",
+        "context": "The Internet Transport Protocols: RTP/UDP",
+        "ground_truth": "To handle feedback, synchronization, and the user interface"
+    },
+    {
+        "question": "What is the primary function of the Manchester encoding scheme in the Physical Layer, as described in Chapter 2 of Computer Networks, Fifth Edition by Andrew Tanenbaum and David Wetherall?",
+        "context": "Chapter 2.1 - 2.4, Computer Networks, Fifth Edition by Andrew Tanenbaum and David Wetherall, 2011",
+        "ground_truth": "Manchester encoding scheme is a type of line coding that represents binary data as a transition in the signal level at the midpoint of each bit period, allowing for clock recovery at the receiver end."
+    },
+    {
+        "question": "What type of error-correcting code is most suitable for wireless links with high error rates, considering the trade-off between error detection and correction capabilities?",
+        "context": "Error-correcting codes on wireless links",
+        "ground_truth": "Cyclic Redundancy Check (CRC) codes are not suitable for correction, but they can be used for detection, while more suitable codes for correction on wireless links are Reed-Solomon codes or Turbo codes, which provide a balance between error detection and correction capabilities."
+    },
+    {
+        "question": "What is the primary reason for the development of the IMAP protocol, given that the provided context does not support remote folder creation and message assignment?",
+        "context": "IMAP protocol development context",
+        "ground_truth": "The primary reason for the development of the IMAP protocol is to solve the limitations of existing mail access protocols, such as the inability to create remote folders and assign messages to folders."
+    },
+    {
+        "question": "What is the primary function of a backbone router in OSPF?",
+        "context": "OSPF Router Classification",
+        "ground_truth": "A backbone router in OSPF is primarily responsible for connecting multiple areas to the backbone network (Area 0), facilitating communication between these areas."
+    },
+    {
+        "question": "What are two examples of computer applications that require the reliability and guaranteed delivery of connection-oriented service, and two examples of applications that can tolerate the potential loss of packets and use connectionless service?",
+        "context": "Computer Networking Fundamentals",
+        "ground_truth": "Two examples of applications that require connection-oriented service are: (1) Online banking transactions, where the reliability and guaranteed delivery of data are crucial for secure financial transactions. (2) Video conferencing, where a stable and continuous connection is necessary to ensure smooth video and audio transmission. Two examples of applications that can use connectionless service are: (1) File transfer protocol (FTP) downloads, where the potential loss of packets can be tolerated and retransmitted as needed. (2) Streaming services, such as YouTube, where the loss of packets can be masked by buffering and retransmission."
+    },
+    {
+        "question": "What is the primary execution order of a Nested Subquery, and how does it differ from a Join and a Correlated Subquery?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "A Nested Subquery executes the inner query first and then uses the result to execute the outer query, in contrast to a Join which executes both queries simultaneously and a Correlated Subquery which executes the inner query for each row of the outer query."
+    },
+    {
+        "question": "In the context of the two-dimensional parity-bit method, what is the condition that triggers a retransmission of the data at the receiver?",
+        "context": "Two-dimensional parity-bit Method",
+        "ground_truth": "If any one of the parity bits for the rows or columns is found to be incorrect."
+    },
+    {
+        "question": "What is the condition under which a packet will be discarded according to the Hop Count Method for avoiding duplicate packets in a flooding algorithm?",
+        "context": "Flooding (static algorithm) - Hop Count Method",
+        "ground_truth": "when the hop counter reaches zero"
+    },
+    {
+        "question": "A router with a capacity of 100,000 packets/sec is given an inaccurate flow specification with a token bucket rate of 5 MB/sec and packet sizes varying from 50 to 1500 bytes. What is the minimum and maximum packet rate that the router can calculate, and how might this affect its decision to accept or reject the flow?",
+        "context": "5-2 Admission Control.pdf",
+        "ground_truth": "The router can calculate that the packet rate will vary from approximately 3500 packets/sec to 105,000 packets/sec. This may cause the router to reject the flow due to potential congestion."
+    },
+    {
+        "question": "A router is implementing fair queuing with five packets queued for transmission. The finishing times for the five packets are: packet 1 (10 bytes) finishes in 10 time units, packet 2 (20 bytes) finishes in 20 time units, packet 3 (15 bytes) finishes in 15 time units, packet 4 (30 bytes) finishes in 30 time units, and packet 5 (25 bytes) finishes in 25 time units. In what order should the packets be transmitted according to the fair queuing algorithm?",
+        "context": "3. Packet Scheduling",
+        "ground_truth": "The packets should be transmitted in the order of their finishing times: packet 1 (10 bytes) at time 10, packet 3 (15 bytes) at time 15, packet 2 (20 bytes) at time 20, packet 5 (25 bytes) at time 25, and packet 4 (30 bytes) at time 30."
+    },
+    {
+        "question": "What are the two primary models of Interprocess Communication (IPC) as described in the context?",
+        "context": "3.29 Silberschatz, Galvin and Gagne 2018 Operating System Concepts \u2013 10th Edition",
+        "ground_truth": "The two primary models of Interprocess Communication (IPC) are Shared Memory and Message Passing."
+    },
+    {
+        "question": "If a file named 'game' has an owner access mode of 7 (RWX), a group access mode of 6 (RWX) and a public access mode of 1 (X), and the group 'G' has been created and attached to the file using 'chgrp G game', what is the actual permission mode of the file 'game' in octal notation?",
+        "context": "ch13.pdf",
+        "ground_truth": "The actual permission mode of the file 'game' is 755, where 7 represents the owner access mode (RWX), 5 represents the group access mode (R-X) and 5 represents the public access mode (R-X)."
+    },
+    {
+        "question": "Consider a binary single-error-detecting code with a minimum distance of 3. If a codeword is received as 10101101, what is the probability that the received codeword is the original codeword or a single-bit error of the original codeword?",
+        "context": "Error-Detecting Codes",
+        "ground_truth": "The probability is 1 - (number of single-bit errors) / (total number of possible single-bit errors). In this case, the total number of possible single-bit errors is 7 (since there are 7 bits in the codeword), and the number of single-bit errors that result in a codeword with a minimum distance of 3 from the original codeword is 0. Therefore, the probability is 1 - 0 / 7 = 1."
+    },
+    {
+        "question": "What is the primary difference between a spinlock and a semaphore in the context of synchronization primitives?",
+        "context": "ch6.pdf",
+        "ground_truth": "A spinlock is a simple synchronization primitive that uses a binary flag to indicate whether a resource is available, whereas a semaphore is a more general synchronization primitive that can be used to control access to multiple resources, and can have a value greater than 1 to allow multiple processes to access the resource simultaneously."
+    },
+    {
+        "question": "What is the range of IP addresses for Class C IP addresses, and how are they typically represented in dotted decimal notation?",
+        "context": "Network Layer-Internet.pdf",
+        "ground_truth": "Class C IP addresses have a range of 192.0.0.0 to 223.255.255.255. They are typically represented in dotted decimal notation as x.x.x.x, where the first octet is between 192 and 223, and the remaining three octets can be any value between 0 and 255."
+    },
+    {
+        "question": "During a three-way handshake, if a client sends a duplicate CONNECTION REQUEST (CR) packet, what is the expected response from the server, assuming the client has already received a duplicate ACK (ACK) packet?",
+        "context": "Connection Establishment",
+        "ground_truth": "The server will send a duplicate ACK (ACK) packet in response to the duplicate CONNECTION REQUEST (CR) packet, as the client has already acknowledged the packet."
+    },
+    {
+        "question": "In the context of the DNS name space division, what is the purpose of dividing the name space into nonoverlapping zones?",
+        "context": "BLM431 Computer Networks, Slide 12",
+        "ground_truth": "To avoid the problems associated with having only a single source of information."
+    },
+    {
+        "question": "What is the purpose of the 'Fragment offset' field in the IPv4 header, and what is the minimum value it can take?",
+        "context": "The IPv4 Protocol: Network Layer in the Internet",
+        "ground_truth": "The 'Fragment offset' field is used to tell where in the current datagram this fragment belongs. The minimum value it can take is 0."
+    },
+    {
+        "question": "Given a table with columns 'Name' and 'Age', write a SQL query that uses a tuple of values in a comparison to select all rows where the 'Age' is either 25 or 30.",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "SELECT * FROM table_name WHERE (Age = 25) OR (Age = 30);"
+    },
+    {
+        "question": "What was the temporary name given to the IP version that replaced IP v4 during its initial development phase?",
+        "context": "IP v6 Development Notes",
+        "ground_truth": "IPng (Next Generation)"
+    },
+    {
+        "question": "What is the primary goal of disk scheduling algorithms in minimizing seek time when requests are located at different sectors on different tracks?",
+        "context": "OS UNIT 3 - 4.pdf",
+        "ground_truth": "The primary goal of disk scheduling algorithms in minimizing seek time is to optimize the performance of disk operations by ordering the requests made by processes in a way that reduces the time it takes to access data."
+    },
+    {
+        "question": "What is the primary characteristic of broadcast links in terms of packet transmission?",
+        "context": "Olum-Fonoon Babol H. Veisi Fall 2005 Page 19",
+        "ground_truth": "Broadcast links allow every terminal connected to many other terminals and can send and receive packets simultaneously, supporting unicast, multicast, and broadcasting."
+    },
+    {
+        "question": "Given a 35-gauge needle, what is the approximate outer diameter of the needle's shaft in millimeters?",
+        "context": "Medical Equipment",
+        "ground_truth": "0.511 mm"
+    },
+    {
+        "question": "For a Hamming code with parity bits p1, p2, and p4, and data bits d0, d1, d2, d3, if the received bits are R0, R1, R2, R3, R5, R7, and R9, and R1, R3, and R5 contain 1's, what is the value of p4?",
+        "context": "Hamming code",
+        "ground_truth": "1"
+    },
+    {
+        "question": "Given that dmin = 3, what is the maximum number of errors that can be detected and corrected in the code words?",
+        "context": "Error-Correcting Codes with dmin = 3, where dmin = 2t+1",
+        "ground_truth": "2 errors can be detected, and 1 error can be corrected"
+    },
+    {
+        "question": "What is the specific mechanism by which a sender adjusts its transmission rate in response to receiving ACK packets with the warning bit set?",
+        "context": "Congestion Control in Datagram Subnets",
+        "ground_truth": "The sender uses a mechanism known as slow-start or additive increase/multiplicative decrease (AIMD) to adjust its transmission rate, specifically by decreasing its transmission rate in response to receiving ACK packets with the warning bit set."
+    },
+    {
+        "question": "Given that a sink tree is a tree and does not contain any loops, what is the theoretical maximum number of hops required to deliver a packet from any router to the sink in a network using a routing algorithm that discovers and uses sink trees?",
+        "context": "\ud83d\udca5DCN PPT till 286 MSE1.pdf",
+        "ground_truth": "The theoretical maximum number of hops required is equal to the height of the sink tree, which is one less than the number of levels in the tree. In a network with n routers, the maximum height of the sink tree is log2(n), making the maximum number of hops required log2(n) - 1."
+    },
+    {
+        "question": "What service does the Session Layer of the OSI Reference Model provide to subdivide a long mechanism for reliability?",
+        "context": "Olum-Fonoon Babol H. Veisi Fall 2005 Page 46",
+        "ground_truth": "Synchronization"
+    },
+    {
+        "question": "In the One-Bit Sliding Window Protocol, if the network layer receives a packet with sequence number (3, 5, *), what is the current window size and the sender's next sequence number to be sent?",
+        "context": "A One-Bit Sliding Window Protocol\n\u2022 Abnormal case. An asterisk indicates where a network layer accepts a packet. The notation is (seq, ack, packet number)",
+        "ground_truth": "The current window size is 3, and the sender's next sequence number to be sent is 6."
+    },
+    {
+        "question": "What is the primary difference between feedback-based flow control and rate-based flow control in the context of flow control mechanisms?",
+        "context": "Flow control mechanisms in data communication",
+        "ground_truth": "Feedback-based flow control relies on receiver feedback to adjust the sender's transmission rate, whereas rate-based flow control uses a built-in mechanism to limit the sender's transmission rate without relying on receiver feedback."
+    },
+    {
+        "question": "What is the primary purpose of implementing Network Address Translation (NAT) in a company's network?",
+        "context": "Network Layer in the Internet",
+        "ground_truth": "To assign each company a single IP address (or at most, a small number of them) for Internet traffic"
+    },
+    {
+        "question": "Given the IPv4 address 167.199.170.82/27, what is the value of the host part of the address in binary format?",
+        "context": "Network layer-Internet.pdf",
+        "ground_truth": "01011111"
+    },
+    {
+        "question": "How many necklaces of Iridium satellites are formed around the Earth, as described in Computer Networks, Fifth Edition by Andrew Tanenbaum and David Wetherall, 2011?",
+        "context": "Low-Earth Orbit Satellites (1) - The Iridium satellites form six necklaces around the earth. Computer Networks, Fifth Edition by Andrew Tanenbaum and David Wetherall, 2011",
+        "ground_truth": "six"
+    },
+    {
+        "question": "What is the maximum number of fragments allowed per datagram, and what is the condition for all fragments except the last one in a datagram?",
+        "context": "IP Header Fragmentation",
+        "ground_truth": "The maximum number of fragments allowed per datagram is 8192, and all fragments except the last one in a datagram must be a multiple of 8 bytes."
+    },
+    {
+        "question": "What is the primary function of RTCP in handling interstream synchronization when different streams have different clocks, granularities, and drift rates?",
+        "context": "Real-Time Transport Protocol",
+        "ground_truth": "RTCP uses Sender Reports (SR) and Receiver Reports (RR) to estimate the clock drift and adjust the streams to keep them in sync."
+    },
+    {
+        "question": "What is the primary mechanism used by the Leaky Bucket algorithm to prevent network congestion, given that it cannot guarantee a specific packet delivery order?",
+        "context": "Network Congestion Control and Quality of Service (QoS)",
+        "ground_truth": "The primary mechanism used by the Leaky Bucket algorithm to prevent network congestion is packet dropping, where packets are discarded when the bucket is full, thereby enforcing a constant average output rate regardless of the burstiness of the input."
+    },
+    {
+        "question": "A router receives a Link State Packet with sequence number 5, but it has already seen packets with sequence numbers 1, 2, 3, and 4. What action should the router take?",
+        "context": "Link State Routing, 4. Distributing the Link State Packets",
+        "ground_truth": "The router should discard the packet with sequence number 5."
+    },
+    {
+        "question": "What is the primary reason why the character count method is no longer commonly used in data transmission?",
+        "context": "\ud83d\udca5DCN PPT till 286 MSE1.pdf",
+        "ground_truth": "The primary reason why the character count method is no longer commonly used in data transmission is that transmission errors can cause the destination to become out of synchronization, making it unable to locate the start of the next frame."
+    },
+    {
+        "question": "What is the purpose of using the low order k bits of the clock as the initial sequence number in a transport protocol connection setup?",
+        "context": "Elements of Transport Protocols",
+        "ground_truth": "To ensure that two identically numbered TPDUs are never outstanding at the same time, thereby preventing sequence number collisions and ensuring reliable data transfer."
+    },
+    {
+        "question": "Given a 3x3 dataword matrix organized as follows: \n\n[1 0 1]\n[0 1 0]\n[1 0 0]\n\nWhat are the parity bits for each row and column of the matrix, assuming the dataword is sent with one extra block and one extra bit for each block?",
+        "context": "Two-dimensional parity-bit Method",
+        "ground_truth": "Row 1 parity bit: 1, Row 2 parity bit: 0, Row 3 parity bit: 1, Column 1 parity bit: 0, Column 2 parity bit: 1, Column 3 parity bit: 0"
+    },
+    {
+        "question": "Consider a relation R with attributes (StudentID, CourseID, StudentName) where StudentName depends only on StudentID. What type of functional dependency is this?",
+        "context": "FD and Normalization (1).pdf",
+        "ground_truth": "This is an example of a Partial Dependency because StudentName depends only on part of the composite key (StudentID), not on the full key (StudentID, CourseID)."
+    },
+    {
+        "question": "What SQL command is used to modify attribute values of one or more selected tuples in the same relation while enforcing referential integrity?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "UPDATE relation_name SET attribute_name = new_value WHERE condition;"
+    },
+    {
+        "question": "What is the key characteristic that distinguishes a Metropolitan Area Network (MAN) from a Local Area Network (LAN) based on its wiring mechanism?",
+        "context": "Olum-Fonoon Babol H. Veisi Fall 2005 Page 26",
+        "ground_truth": "The use of a Distributed Queue Dual Bus (DQDB) architecture, as specified in IEEE 802.6, is not the correct answer. The correct answer is that MANs can be distinguished from LANs based on the use of a cable TV infrastructure, which is not typically used in LANs."
+    },
+    {
+        "question": "What is the primary purpose of the 'get and set permissions' system call in the context of protection mechanisms?",
+        "context": "Silberschatz, Galvin and Gagne 2018 Operating System Concepts \u2013 10th Edition",
+        "ground_truth": "The primary purpose of the 'get and set permissions' system call is to manage and control access to system resources by retrieving and modifying the permissions associated with those resources."
+    },
+    {
+        "question": "What is the maximum length of the IP header options in bytes, given that the maximum value of the 4-bit IHL field is 15?",
+        "context": "IP Header Specifications",
+        "ground_truth": "40 bytes"
+    },
+    {
+        "question": "What is the primary protocol used by the Internet Control Message Protocol (ICMP) to carry control messages?",
+        "context": "ICMP",
+        "ground_truth": "IP (Internet Protocol)"
+    },
+    {
+        "question": "In the UNIX directory listing provided in chapter 13 of Silberschatz, Galvin and Gagne's 10th edition textbook, what is the file type and permissions of the file 'file1'?",
+        "context": "ch13.pdf",
+        "ground_truth": "The file type of 'file1' is regular file and its permissions are -rw-r--r-- (0600 in octal)"
+    },
+    {
+        "question": "What are the design issues associated with layering in network software, as described by Olum-Fonoon Babol H. Veisi on page 29 of the Fall 2005 document?",
+        "context": "Computer networking, Olum-Fonoon Babol H. Veisi Fall 2005 Page 29",
+        "ground_truth": "The design issues associated with layering in network software include the need for clear protocol interfaces between layers, the potential for layering to introduce complexity and overhead, and the challenge of ensuring that layers are properly aligned and coordinated to achieve efficient data transfer."
+    },
+    {
+        "question": "What is an example of a decentralized network architecture used for file sharing, as mentioned in the context?",
+        "context": "Olum-Fonoon Babol H. Veisi Fall 2005 Page 6",
+        "ground_truth": "Peer to peer network \u2013 BitTorrent"
+    },
+    {
+        "question": "What is the primary advantage of using memory-mapped files in an operating system, as described in Chapter 13 of Silberschatz, Galvin and Gagne's Operating System Concepts 10th Edition?",
+        "context": "ch13.pdf",
+        "ground_truth": "The primary advantage of using memory-mapped files is that it allows the operating system to efficiently map a file's contents directly into physical memory, enabling faster access and reducing the need for explicit file I/O operations."
+    },
+    {
+        "question": "What type of addressing in packet transmission involves a subset of machines receiving and processing the packet?",
+        "context": "Olum-Fonoon Babol H. Veisi Fall 2005 Page 22",
+        "ground_truth": "Multicasting"
+    },
+    {
+        "question": "What is the specific a priori information required by the deadlock-avoidance algorithm in the Banker's algorithm, as described in Silberschatz, Galvin and Gagne's Operating System Concepts \u2013 10th Edition?",
+        "context": "ch8.pdf",
+        "ground_truth": "The maximum number of resources of each type that each process may need"
+    },
+    {
+        "question": "Consider a relational database with a 'Users' table containing columns 'UserID', 'Username', 'Email', and 'Password'. If we want to enforce referential integrity by creating a foreign key constraint on the 'UserID' column in the 'Orders' table, which of the following SQL statements would be correct?",
+        "context": "DBMS-Chapter 5.pdf",
+        "ground_truth": "ALTER TABLE Orders ADD CONSTRAINT fk_UserID FOREIGN KEY (UserID) REFERENCES Users(UserID);"
+    },
+    {
+        "question": "What are the Fragment Header Fields present in IPv6 fragmentation, and how do they relate to their IPv4 counterparts?",
+        "context": "6. Internetworking.pdf",
+        "ground_truth": "The Fragment Header Fields present in IPv6 fragmentation are Next Header, Fragmentation offset, More flag, and Identification, which are analogous to their IPv4 counterparts with the same names."
+    },
+    {
+        "question": "What type of service is characterized by establishing a connection before any data are transferred, and the data link layer guarantees that each frame sent is indeed received, received exactly once, and in the right order?",
+        "context": "2 Acknowledged connection-oriented service",
+        "ground_truth": "Connection-Oriented Service with Guaranteed Delivery and Ordering"
+    },
+    {
+        "question": "What type of trigger would you use to prevent a donor from being deleted from the Donors table if they have an associated record in the Blood_record table?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "BEFORE DELETE: This type of trigger would run before the deletion, allowing you to check if the donor has any associated records in the Blood_record table and prevent the deletion if necessary."
+    },
+    {
+        "question": "What are the three scenarios in which a referential integrity constraint can be violated in a database?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "A referential integrity constraint can be violated when tuples are inserted, deleted, or when a foreign key or primary key attribute value is modified."
+    },
+    {
+        "question": "If an escape byte occurs in the middle of the data, what is the effect on the escape byte itself?",
+        "context": "Data transmission framing",
+        "ground_truth": "The escape byte is stuffed with another escape byte, making it part of an escape sequence."
+    },
+    {
+        "question": "If the parity bits in a Hamming code are p1 = 0, p2 = 1, p4 = 0, and p8 = 0, and it is given that only the parity bit is corrupted, which parity bit is in error?",
+        "context": "Error-Correcting Codes - Hamming code",
+        "ground_truth": "p2"
+    },
+    {
+        "question": "What is the MIME type (4) associated with a multipart message containing enriched and audio alternatives, as per the BLM431 Computer Networks course by Dr. Refik Samet?",
+        "context": "BLM431 Computer Networks Dr.Refik Samet 62 MIME (4)",
+        "ground_truth": "multipart/alternative"
+    },
+    {
+        "question": "When a user executes the same program multiple times, how does the operating system distinguish between the resulting processes?",
+        "context": "Silberschatz, Galvin and Gagne, Operating System Concepts, 10th Edition, Chapter 3",
+        "ground_truth": "The operating system distinguishes between the resulting processes by assigning each process its own unique process ID (PID), memory space, and other system resources, allowing multiple instances of the same program to run concurrently and independently."
+    },
+    {
+        "question": "Given a binary number 56 in base 2, what is the equivalent decimal value of the 6th bit position?",
+        "context": "DBMS Unit 2 PPT1 (1).pdf",
+        "ground_truth": "The 6th bit position in the binary representation of 56 is 0, and the decimal value of the 6th bit position is 2^5 = 32, but since the 6th bit is 0, the value is 0."
+    },
+    {
+        "question": "What is the key difference between conflict serializability and view serializability in the context of database scheduling, and provide an example of a scenario where a schedule can be view serializable but not conflict serializable?",
+        "context": "DBMS_Unit_3.pdf",
+        "ground_truth": "Conflict serializability ensures that the schedule is equivalent to some serial schedule, whereas view serializability ensures that the schedule is equivalent to some serial schedule with respect to the visible operations. A schedule can be view serializable but not conflict serializable if it contains blind writes, as the presence of blind writes can form cycles that cannot be definitively proven to be serializable."
+    },
+    {
+        "question": "What is the primary difference between response lost (option c) and response lost and subsequent DRs lost (option d) in the context of Connection Release?",
+        "context": "8. Transport Layer.pdf",
+        "ground_truth": "In the context of Connection Release, response lost (option c) refers to the loss of a single response, whereas response lost and subsequent DRs lost (option d) refers to the loss of a response and subsequent Data Records (DRs), indicating a more severe failure in the connection."
+    }
+]
