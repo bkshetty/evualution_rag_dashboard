@@ -30,8 +30,9 @@ from deepeval.test_case import LLMTestCase
 from deepeval.metrics import AnswerRelevancyMetric, ContextualPrecisionMetric, FaithfulnessMetric, ContextualRecallMetric
 from deepeval.models.base_model import DeepEvalBaseLLM
 
-# Load environment variables
-load_dotenv(override=True)
+# Robust .env loading relative to script path
+script_dir = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(dotenv_path=os.path.join(script_dir, ".env"), override=True)
 
 class GroqFallbackLLM(DeepEvalBaseLLM):
     """DeepEval LLM Wrapper with API key rotation and rate limit backoff."""
@@ -65,8 +66,14 @@ class GroqFallbackLLM(DeepEvalBaseLLM):
                     else:
                         return llm.invoke(prompt).content
                 except Exception as e:
-                    # Swapping keys immediately on exception
-                    print(f"      [!] Key {key[:8]}... failed: {e}")
+                    error_msg = str(e)
+                    # If the key is permanently dead, print a warning and swap to the next key
+                    if "401" in error_msg or "invalid_api_key" in error_msg:
+                        print(f"      [!] Key {key[:8]}... is INVALID (401). Skipping this key.")
+                        continue
+                        
+                    # Otherwise, it's just a rate limit or formatting error, so swap keys
+                    print(f"      [!] Key {key[:8]}... failed: {error_msg}")
                     continue
             
             print("All API Keys Rate-Limited. Entering 65-second cooldown...")
@@ -213,6 +220,14 @@ def generate_questions_to_target(target_count=200):
     return existing_questions[:target_count]
 
 
+_EMBEDDERS = {}
+
+def get_embedder(model_name: str):
+    if model_name not in _EMBEDDERS:
+        _EMBEDDERS[model_name] = HuggingFaceEmbeddings(model_name=model_name)
+    return _EMBEDDERS[model_name]
+
+
 # Pipelines to retrieve and generate answers
 def run_pipeline_without_rag(query: str, generator_llm: GroqFallbackLLM):
     start_time = time.time()
@@ -227,7 +242,7 @@ def run_pipeline_with_rag(query: str, generator_llm: GroqFallbackLLM, chunking: 
     
     # 1. Map to correct embedding model (fixes dimension mismatch from large to small)
     embed_model_name = "BAAI/bge-small-en-v1.5" if embedding == "BGE embeddings" else "all-MiniLM-L6-v2"
-    embedder = HuggingFaceEmbeddings(model_name=embed_model_name)
+    embedder = get_embedder(embed_model_name)
     
     c_str = chunking.lower()
     e_str = "bge" if embedding == "BGE embeddings" else "sentence-transformers"
@@ -354,7 +369,7 @@ def main():
         except Exception as e:
             print(f"[-] Error loading checkpoint: {e}")
 
-    # Initialize LLMs (Generator is 8B to save tokens, Judge is 70B to prevent tool_use_failed crashes)
+    # Generator is 8B to save tokens. Judge is 70B to ensure maximum grading accuracy for research evaluation.
     evaluator_llm_judge = GroqFallbackLLM("llama-3.3-70b-versatile")
     generator_llm = GroqFallbackLLM("llama-3.1-8b-instant")
 
@@ -466,7 +481,7 @@ def main():
                 json.dump(progress, f, indent=4)
 
             print(f"    [OK] Completed Q{orig_idx+1}: Acc={scaled_acc} | Prec={scaled_prec} | HallucinationRed={scaled_hall} | Latency={latency:.2f}s")
-            time.sleep(1) # Basic cooldown between questions
+            time.sleep(5) # Cooldown delay to prevent hitting Groq's Tokens Per Minute (TPM) limits
 
     print("\n=======================================================")
     print("[OK] All Automated evaluations successfully complete and logged!")

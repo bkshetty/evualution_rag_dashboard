@@ -13,7 +13,9 @@ from langchain_groq import ChatGroq
 from langchain_core.messages import SystemMessage, HumanMessage
 from pydantic import BaseModel
 
-load_dotenv()
+# Robust .env loading relative to script path
+script_dir = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(dotenv_path=os.path.join(script_dir, ".env"), override=True)
 
 st.set_page_config(page_title="Dataset Generator UI", layout="centered")
 

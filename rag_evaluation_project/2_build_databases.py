@@ -8,7 +8,9 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS, Chroma
 from langchain_core.documents import Document # Imported to reconstruct clean chunks
 
-load_dotenv()
+# Robust .env loading relative to script path
+script_dir = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(dotenv_path=os.path.join(script_dir, ".env"), override=True)
 
 def load_raw_notes():
     print("[+] Loading your 36+ college notes PDFs...")

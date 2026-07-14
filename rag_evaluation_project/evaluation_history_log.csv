@@ -1,205 +1,746 @@
 System Type,Architecture,Chunking,Embedding,Database,Answer Accuracy,Retrieval Precision,Hallucination Reduction,Response Time (s)
 
-Without RAG (Baseline),None,None,None,None,3.8,1.0,1.0,1.89
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.82
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.11
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.67
-Without RAG (Baseline),None,None,None,None,4.0,1.0,1.0,1.53
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.49
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.89
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.56
-Without RAG (Baseline),None,None,None,None,4.2,1.0,1.0,1.49
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.63
-Without RAG (Baseline),None,None,None,None,4.3,1.0,1.0,2.51
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.43
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,1.2,5.0,11.29
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,3.3,1.0,5.0,11.64
-Without RAG (Baseline),None,None,None,None,3.2,1.0,1.0,1.76
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.49
-Without RAG (Baseline),None,None,None,None,1.0,1.0,1.0,1.46
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.42
-Without RAG (Baseline),None,None,None,None,4.5,1.0,1.0,2.54
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.39
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.58
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.48
-Without RAG (Baseline),None,None,None,None,4.2,1.0,1.0,2.04
-Without RAG (Baseline),None,None,None,None,4.6,1.0,1.0,1.52
-Without RAG (Baseline),None,None,None,None,4.0,1.0,1.0,1.39
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.43
-Without RAG (Baseline),None,None,None,None,1.0,1.0,1.0,3.56
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.65
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.57
-Without RAG (Baseline),None,None,None,None,4.6,1.0,1.0,1.47
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.91
-Without RAG (Baseline),None,None,None,None,3.3,1.0,1.0,1.16
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.27
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.49
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.4
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.36
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.8
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,3.37
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.45
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.29
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.2
-Without RAG (Baseline),None,None,None,None,4.4,1.0,1.0,1.41
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.51
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.3
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.49
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,0.93
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.24
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.89
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.59
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.68
-Without RAG (Baseline),None,None,None,None,3.9,1.0,1.0,1.65
-Without RAG (Baseline),None,None,None,None,4.7,1.0,1.0,1.23
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.3
-Without RAG (Baseline),None,None,None,None,4.6,1.0,1.0,1.37
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.35
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.4
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.49
-Without RAG (Baseline),None,None,None,None,1.0,1.0,1.0,1.4
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.3
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.72
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.36
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.92
-Without RAG (Baseline),None,None,None,None,4.1,1.0,1.0,1.41
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.64
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.68
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.6
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.42
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.44
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.61
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.3
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.22
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.52
-Without RAG (Baseline),None,None,None,None,3.6,1.0,1.0,1.37
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.34
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.6
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.29
-Without RAG (Baseline),None,None,None,None,3.2,1.0,1.0,1.36
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.59
-Without RAG (Baseline),None,None,None,None,4.8,1.0,1.0,1.48
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.75
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.61
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.22
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.35
-Without RAG (Baseline),None,None,None,None,4.4,1.0,1.0,1.41
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.37
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.24
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.32
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.58
-Without RAG (Baseline),None,None,None,None,3.9,1.0,1.0,1.28
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.62
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.52
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.47
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.3
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.0
-Without RAG (Baseline),None,None,None,None,3.3,1.0,1.0,1.2
-Without RAG (Baseline),None,None,None,None,4.2,1.0,1.0,1.42
-Without RAG (Baseline),None,None,None,None,4.4,1.0,1.0,1.39
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.25
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.61
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.61
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.36
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.55
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.4
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.25
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.43
-Without RAG (Baseline),None,None,None,None,4.4,1.0,1.0,1.12
-Without RAG (Baseline),None,None,None,None,4.6,1.0,1.0,1.36
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.87
-Without RAG (Baseline),None,None,None,None,4.6,1.0,1.0,1.22
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.5
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.39
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.84
-Without RAG (Baseline),None,None,None,None,4.1,1.0,1.0,1.77
-Without RAG (Baseline),None,None,None,None,4.6,1.0,1.0,1.18
-Without RAG (Baseline),None,None,None,None,4.4,1.0,1.0,1.35
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.41
-Without RAG (Baseline),None,None,None,None,4.7,1.0,1.0,1.75
-Without RAG (Baseline),None,None,None,None,3.5,1.0,1.0,1.39
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.24
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.54
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.48
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.68
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.5
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.39
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.39
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.53
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.67
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.64
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.69
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.98
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.48
-Without RAG (Baseline),None,None,None,None,2.5,1.0,1.0,2.04
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.74
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.45
-Without RAG (Baseline),None,None,None,None,4.2,1.0,1.0,1.53
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.41
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.52
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.44
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.29
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.26
-Without RAG (Baseline),None,None,None,None,4.5,1.0,1.0,1.62
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.37
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.44
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.31
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.41
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.35
-Without RAG (Baseline),None,None,None,None,3.9,1.0,1.0,1.28
-Without RAG (Baseline),None,None,None,None,4.6,1.0,1.0,1.43
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.33
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.44
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.8
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.68
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.45
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.73
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.44
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.29
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.67
-Without RAG (Baseline),None,None,None,None,4.3,1.0,1.0,1.35
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.52
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.95
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.41
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.65
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.8
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.48
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.09
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.73
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.79
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,0.78
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,1.7,5.0,12.82
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,5.0,5.0,13.5
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,3.8,5.0,9.68
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,8.7
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.2,1.0,5.0,9.1
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,3.1,3.2,5.0,9.32
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.8,1.0,5.0,8.9
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,3.9,1.0,5.0,9.21
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,4.2,5.0,8.73
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,1.7,5.0,9.91
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.7,5.0,5.0,8.48
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.5,1.7,5.0,9.5
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.1,2.9,5.0,9.7
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,1.4,1.0,5.0,8.58
+With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,4.6,5.0,8.52
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,5.0,2.1,5.0,10.76
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,4.5,5.0,5.0,11.26
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,5.0,5.0,5.0,10.67
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,1.9,1.0,5.0,8.75
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,5.0,5.0,5.0,10.99
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,2.5,2.5,5.0,10.0
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,4.6,1.0,5.0,10.55
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,3.1,1.2,5.0,8.35
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,4.8,1.0,5.0,8.95
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,5.0,2.5,5.0,9.11
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,4.7,5.0,5.0,9.29
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,2.5,1.0,5.0,9.25
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,2.1,1.0,5.0,9.59
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,2.8,1.0,5.0,9.96
+With RAG,Naive RAG,Fixed,SentenceTransformers,ChromaDB,5.0,4.2,5.0,8.55
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,3.5,3.8,5.0,10.39
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,5.0,1.7,5.0,8.96
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,5.0,3.2,5.0,9.24
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,5.0,1.7,5.0,9.28
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,2.2,1.0,5.0,8.55
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,2.5,1.0,5.0,8.95
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,2.3,2.5,5.0,9.26
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,4.8,5.0,3.9,8.95
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,8.85
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,5.0,1.0,5.0,8.57
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,4.4,3.8,5.0,8.58
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,2.3,4.0,5.0,9.21
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,4.6,2.1,4.6,9.71
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,3.4,1.0,5.0,8.96
+With RAG,Naive RAG,Fixed,BGE embeddings,FAISS,4.8,4.2,5.0,9.48
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,4.0,3.8,5.0,10.38
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,8.73
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.2,5.0,9.19
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.7,5.0,15.13
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,2.5,1.0,5.0,8.28
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,2.5,1.0,5.0,9.45
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,2.0,1.0,5.0,9.89
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,4.8,4.6,4.4,9.59
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,9.46
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.7,5.0,9.18
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,4.0,3.8,3.3,8.42
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,2.4,5.0,5.0,9.36
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,9.69
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,2.7,5.0,5.0,9.59
+With RAG,Naive RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,11.93
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,5.0,4.6,5.0,9.83
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,5.0,5.0,5.0,11.9
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,4.6,3.8,5.0,9.1
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,1.3,1.0,5.0,10.88
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,2.3,1.0,5.0,9.05
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,2.3,1.0,5.0,9.86
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,1.8,1.2,5.0,8.63
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,3.9,1.0,5.0,9.04
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,4.8,2.9,1.4,9.57
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,5.0,3.8,5.0,8.41
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,5.0,2.5,4.6,8.99
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,4.8,4.0,5.0,9.13
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,2.5,5.0,5.0,10.28
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,2.3,2.5,5.0,9.28
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,2.3,1.0,5.0,9.8
+With RAG,Naive RAG,Recursive,SentenceTransformers,FAISS,3.1,1.0,5.0,10.0
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,5.0,4.2,5.0,9.96
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,4.5,5.0,5.0,9.12
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,5.0,5.0,5.0,9.7
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,2.1,1.0,4.3,9.04
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,4.8,5.0,5.0,9.82
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,1.2,1.2,5.0,9.21
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,4.5,1.0,5.0,10.7
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,4.8,2.5,3.6,10.86
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,5.0,2.5,5.0,9.11
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,4.6,2.5,3.9,8.89
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,4.8,4.2,5.0,9.22
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,2.5,5.0,5.0,9.72
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,2.3,2.9,5.0,8.34
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,2.8,1.0,5.0,8.31
+With RAG,Naive RAG,Recursive,SentenceTransformers,ChromaDB,2.5,1.0,4.3,9.27
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,5.0,5.0,5.0,9.23
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,4.6,2.9,5.0,9.28
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,5.0,2.5,5.0,9.67
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,4.6,1.0,5.0,8.97
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,2.2,1.0,5.0,8.47
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,2.3,5.0,5.0,8.81
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,2.3,2.5,5.0,9.44
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,3.6,1.7,5.0,9.07
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,5.0,5.0,5.0,9.59
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,4.5,2.5,5.0,9.59
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,5.0,4.0,5.0,8.99
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,2.3,4.0,5.0,8.85
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,4.7,2.1,5.0,10.29
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,1.9,1.0,5.0,8.89
+With RAG,Naive RAG,Recursive,BGE embeddings,FAISS,4.8,1.0,5.0,9.4
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,4.5,3.8,5.0,9.02
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,8.88
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,5.0,1.0,5.0,8.65
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.2,5.0,9.35
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.0,5.0,8.75
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,2.3,5.0,5.0,9.09
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,2.0,1.7,5.0,10.23
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,4.1,1.7,5.0,9.01
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,9.15
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,5.0,1.2,5.0,9.37
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,4.8,4.2,5.0,10.74
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,2.0,5.0,5.0,10.94
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,4.8,5.0,5.0,9.73
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.0,5.0,8.62
+With RAG,Naive RAG,Recursive,BGE embeddings,ChromaDB,4.8,1.7,5.0,9.04
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,4.5,2.9,5.0,10.07
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,5.0,9.51
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,4.6,3.8,5.0,10.1
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,1.9,1.0,5.0,8.23
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,2.2,1.7,5.0,9.74
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,2.5,1.0,5.0,8.81
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,5.0,1.0,5.0,10.04
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,4.4,2.5,5.0,9.18
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,5.0,11.05
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,4.8,4.2,5.0,8.95
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,5.0,3.8,5.0,7.84
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,2.3,5.0,5.0,9.29
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,2.3,2.5,5.0,9.02
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,2.1,1.0,5.0,9.21
+With RAG,Naive RAG,Semantic,SentenceTransformers,FAISS,3.1,5.0,5.0,9.05
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.7,5.0,10.83
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,4.5,5.0,5.0,8.27
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,5.0,5.0,5.0,8.57
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,1.9,1.0,5.0,8.92
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,4.8,5.0,5.0,9.83
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,2.1,1.2,5.0,8.98
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.0,5.0,8.81
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,3.5,2.1,5.0,8.59
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,4.4,4.6,5.0,8.84
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,4.7,3.8,4.4,8.82
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,3.9,5.0,5.0,9.22
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,2.3,5.0,5.0,9.54
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,2.3,2.9,5.0,9.58
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,2.8,1.0,5.0,8.7
+With RAG,Naive RAG,Semantic,SentenceTransformers,ChromaDB,3.1,1.7,5.0,9.56
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.5,3.8,5.0,10.22
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.3,5.0,5.0,11.04
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.2,2.5,5.0,8.15
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.8,1.0,5.0,8.55
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,2.2,1.0,5.0,8.39
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,1.8,1.0,5.0,8.99
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,2.3,2.5,5.0,9.1
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.0,5.0,3.1,9.57
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,2.5,5.0,5.0,9.06
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.8,2.5,5.0,8.91
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.6,3.8,5.0,8.65
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,2.3,2.1,5.0,9.86
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.7,2.1,5.0,9.43
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,2.0,1.0,5.0,10.78
+With RAG,Naive RAG,Semantic,BGE embeddings,FAISS,4.6,4.2,5.0,12.92
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,4.4,4.2,5.0,10.82
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,5.0,5.0,5.0,7.51
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.61
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,5.0,3.8,5.0,7.36
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,7.81
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,2.1,1.0,5.0,7.25
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,1.9,1.0,5.0,6.44
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,4.8,1.2,3.1,6.98
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,5.0,1.0,5.0,6.92
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,4.8,2.5,5.0,6.68
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,4.7,5.0,5.0,8.22
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,2.3,1.0,5.0,7.33
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,4.7,5.0,5.0,7.51
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,2.8,1.0,5.0,7.28
+With RAG,Naive RAG,Semantic,BGE embeddings,ChromaDB,4.7,1.2,5.0,7.11
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,5.0,2.1,5.0,8.39
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,5.0,5.0,5.0,7.46
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,5.0,3.8,5.0,6.87
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,6.37
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,2.2,1.0,5.0,6.89
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,3.1,1.7,5.0,6.65
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,4.6,1.0,5.0,7.17
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,3.9,1.0,5.0,6.73
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,5.0,5.0,5.0,6.63
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,5.0,2.9,5.0,8.96
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,4.4,4.2,5.0,7.01
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,2.5,3.2,5.0,7.34
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,2.1,2.5,5.0,7.07
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,1.4,1.0,4.0,6.41
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,FAISS,5.0,5.0,5.0,6.98
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,4.5,2.1,5.0,8.48
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,4.2,5.0,5.0,7.35
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,4.8,5.0,5.0,6.62
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,2.1,1.0,5.0,8.22
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,5.0,5.0,5.0,6.85
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,2.5,3.2,5.0,7.19
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,4.1,1.0,5.0,7.21
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,3.1,1.2,5.0,6.83
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,4.8,1.0,5.0,6.7
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,5.0,2.5,5.0,7.35
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,4.4,4.2,5.0,6.47
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,2.1,1.0,5.0,6.72
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,2.0,2.5,5.0,7.06
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,2.8,1.0,5.0,6.73
+With RAG,Hybrid RAG,Fixed,SentenceTransformers,ChromaDB,5.0,5.0,5.0,7.16
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,4.5,3.8,5.0,7.27
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,14.6
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,5.0,3.2,5.0,8.79
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,3.0,1.0,5.0,7.09
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,2.0,1.0,5.0,6.93
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,2.5,1.0,5.0,7.06
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,2.3,2.5,5.0,6.69
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,4.8,5.0,3.9,7.06
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,6.5
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,5.0,1.0,5.0,6.54
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,4.8,3.8,4.3,6.96
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,2.3,4.2,5.0,6.58
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,4.7,4.0,5.0,9.0
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,2.3,5.0,5.0,6.79
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,4.8,2.1,5.0,7.14
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,3.4,1.0,5.0,6.96
+With RAG,Hybrid RAG,Fixed,BGE embeddings,FAISS,4.8,4.2,5.0,7.29
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,3.5,3.8,5.0,15.78
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,7.26
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.2,5.0,6.93
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,3.0,1.7,5.0,7.27
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,2.5,1.0,5.0,6.66
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,2.5,2.9,5.0,6.61
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,1.9,1.0,5.0,6.75
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,4.8,4.6,5.0,6.99
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.74
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,6.66
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,4.0,3.8,3.3,6.84
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,2.3,5.0,5.0,8.37
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.96
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,2.7,1.0,5.0,6.51
+With RAG,Hybrid RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,7.26
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,4.5,5.0,5.0,7.31
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,5.0,5.0,5.0,7.1
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,4.5,3.8,5.0,6.88
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,1.4,1.0,5.0,7.03
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,2.3,1.0,5.0,6.6
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,1.2,1.2,5.0,6.42
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,3.9,1.0,5.0,6.67
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,4.8,1.7,1.4,7.31
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,5.0,3.8,5.0,6.6
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,5.0,2.5,5.0,7.25
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,4.8,4.2,5.0,6.66
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,2.5,5.0,5.0,6.63
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,2.3,2.5,5.0,6.93
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,2.1,1.0,5.0,6.82
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,FAISS,2.5,1.0,5.0,7.06
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,5.0,5.0,5.0,7.33
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,4.5,5.0,5.0,7.08
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,5.0,5.0,5.0,6.38
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,3.8,1.0,5.0,7.61
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,4.8,1.0,5.0,6.92
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,1.2,1.2,5.0,6.29
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,4.5,1.0,5.0,6.64
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,4.8,1.2,3.6,6.68
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,5.0,2.5,5.0,6.73
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,5.0,2.5,5.0,6.97
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,4.8,4.2,5.0,6.56
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,2.5,4.6,5.0,6.79
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,2.3,1.0,5.0,7.2
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,2.8,1.0,5.0,6.32
+With RAG,Hybrid RAG,Recursive,SentenceTransformers,ChromaDB,2.5,1.0,5.0,9.76
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,5.0,3.8,5.0,7.87
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,4.4,5.0,5.0,9.33
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,5.0,2.5,5.0,6.16
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,4.6,1.0,5.0,6.79
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,2.2,1.0,5.0,7.01
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,3.0,4.2,5.0,6.73
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,2.3,2.5,5.0,6.77
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,3.6,1.0,5.0,6.33
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,5.0,1.0,5.0,6.82
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,4.7,2.5,5.0,6.51
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,4.6,3.8,5.0,6.37
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,2.3,4.0,5.0,6.65
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,4.7,4.0,4.7,7.43
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,1.7,1.0,5.0,6.81
+With RAG,Hybrid RAG,Recursive,BGE embeddings,FAISS,4.8,1.0,5.0,6.69
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,4.5,3.8,5.0,8.04
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.85
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.33
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.2,5.0,6.89
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.0,5.0,6.75
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,2.3,5.0,5.0,6.57
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,2.0,1.0,5.0,6.69
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,3.5,1.7,5.0,6.5
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.92
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,5.0,1.2,5.0,7.21
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,4.8,5.0,5.0,6.69
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,2.3,5.0,5.0,6.84
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,4.6,5.0,5.0,6.97
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,3.1,1.0,5.0,6.35
+With RAG,Hybrid RAG,Recursive,BGE embeddings,ChromaDB,5.0,1.7,5.0,7.2
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,4.5,3.2,5.0,7.28
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,5.0,7.76
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,5.0,3.8,5.0,6.33
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,2.2,1.0,5.0,6.64
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,2.3,1.0,5.0,6.46
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,2.5,1.0,5.0,7.34
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,5.0,1.0,5.0,6.64
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,4.4,1.2,5.0,6.31
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,3.0,6.22
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,4.8,5.0,5.0,6.49
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,5.0,4.0,5.0,6.39
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,2.3,2.9,5.0,6.64
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,2.3,2.5,5.0,6.58
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,2.1,1.0,5.0,6.26
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,FAISS,3.1,4.2,5.0,6.53
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.7,5.0,18.88
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,5.0,5.0,5.0,6.57
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,5.0,5.0,5.0,6.6
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,4.2,1.0,5.0,6.71
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.0,5.0,6.58
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,2.5,1.2,5.0,6.82
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.0,5.0,7.86
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,4.4,2.1,5.0,6.67
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,5.0,4.6,5.0,6.97
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,4.7,3.8,5.0,7.01
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,4.2,5.0,5.0,6.58
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,2.3,2.9,5.0,6.74
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,2.3,2.5,5.0,6.77
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,2.1,1.0,5.0,6.58
+With RAG,Hybrid RAG,Semantic,SentenceTransformers,ChromaDB,3.1,4.2,5.0,6.83
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.5,3.8,5.0,6.9
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.5,5.0,5.0,6.57
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,5.0,5.0,5.0,6.24
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.8,1.0,5.0,6.85
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,2.0,1.0,5.0,6.23
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,1.8,2.5,5.0,6.84
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,2.3,2.5,5.0,6.33
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.6,4.6,3.1,7.16
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,5.0,1.0,5.0,8.43
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.8,2.5,5.0,7.92
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.6,4.0,5.0,27.55
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,2.3,1.2,5.0,6.69
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.7,4.0,5.0,7.75
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,1.7,1.0,5.0,6.24
+With RAG,Hybrid RAG,Semantic,BGE embeddings,FAISS,4.5,4.2,5.0,6.73
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,4.5,4.2,5.0,7.06
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.86
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,5.0,5.0,5.0,6.66
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,5.0,1.2,5.0,7.33
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,7.14
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,7.17
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,1.9,1.0,5.0,6.57
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,4.8,1.2,3.8,6.65
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,6.66
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,4.8,2.5,5.0,6.81
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,4.8,5.0,5.0,6.24
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,2.4,1.0,5.0,7.04
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,4.9,5.0,5.0,7.44
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,2.1,1.0,5.0,6.73
+With RAG,Hybrid RAG,Semantic,BGE embeddings,ChromaDB,4.1,1.2,5.0,6.98
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,5.0,1.7,5.0,17.61
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,5.0,5.0,5.0,6.82
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,5.0,3.8,5.0,6.67
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,6.26
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,2.2,1.0,5.0,6.94
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,2.2,1.0,5.0,7.32
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,2.2,1.0,5.0,7.61
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,3.1,2.9,5.0,6.24
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,4.4,5.0,5.0,7.4
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,5.0,2.9,4.6,1.3
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,4.4,5.0,5.0,1.21
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,2.5,1.7,5.0,1.41
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,2.3,2.5,5.0,1.54
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,1.4,1.0,4.0,1.11
+With RAG,Graph RAG,Fixed,SentenceTransformers,FAISS,5.0,4.6,5.0,1.32
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,4.8,1.0,5.0,1.88
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,5.0,5.0,5.0,3.38
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,4.8,5.0,5.0,1.48
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,2.5,1.0,5.0,1.12
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,4.8,1.0,5.0,1.19
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,2.5,3.2,5.0,1.32
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,4.6,1.0,5.0,2.6
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,2.9,1.2,5.0,1.4
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,4.2,1.7,5.0,1.38
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,5.0,2.5,5.0,1.43
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,4.5,4.2,5.0,1.44
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,2.5,4.6,5.0,1.54
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,2.1,2.9,5.0,1.83
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,2.8,1.0,5.0,1.45
+With RAG,Graph RAG,Fixed,SentenceTransformers,ChromaDB,4.9,5.0,5.0,1.81
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,9.82
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,4.5,3.8,5.0,2.01
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,5.0,1.0,5.0,1.48
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,1.25
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,5.0,1.7,5.0,1.34
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,2.2,1.0,5.0,1.54
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,2.9,1.0,5.0,2.84
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,2.3,2.5,5.0,10.86
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,4.8,5.0,3.3,1.37
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,1.26
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,5.0,2.1,5.0,1.27
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,5.0,3.8,5.0,1.36
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,2.3,5.0,5.0,1.48
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,4.8,2.1,5.0,1.73
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,2.2,5.0,5.0,1.34
+With RAG,Graph RAG,Fixed,BGE embeddings,FAISS,4.2,4.2,5.0,2.13
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,4.0,3.8,5.0,2.43
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.58
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,4.6,5.0,4.3,1.17
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.27
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.28
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,2.3,1.0,5.0,1.56
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,1.9,1.7,5.0,1.48
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,4.8,5.0,5.0,1.53
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,1.37
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.7,4.6,1.61
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,4.4,3.8,5.0,1.24
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,2.3,1.0,5.0,5.16
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,1.66
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,2.7,1.0,5.0,1.63
+With RAG,Graph RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.93
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,5.0,4.6,5.0,9.38
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,4.6,5.0,5.0,2.42
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,5.0,3.8,5.0,15.67
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,1.2,1.0,5.0,9.52
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,2.3,1.0,5.0,7.16
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,1.7,1.2,5.0,1.57
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,4.5,1.0,5.0,1.29
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,4.8,1.7,1.4,1.31
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,5.0,3.8,5.0,1.32
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,5.0,2.5,4.6,1.56
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,4.8,4.2,5.0,1.32
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,2.5,4.6,5.0,1.55
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,2.3,1.0,5.0,1.35
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,2.0,1.0,5.0,1.26
+With RAG,Graph RAG,Recursive,SentenceTransformers,FAISS,2.5,1.0,5.0,1.41
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,5.0,1.0,5.0,1.83
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,4.5,5.0,5.0,1.53
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,4.8,5.0,5.0,1.2
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,4.2,1.0,5.0,1.24
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,5.0,5.0,5.0,1.18
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,1.5,3.2,5.0,1.43
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,4.5,1.0,5.0,1.36
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,4.4,2.5,4.3,1.36
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,5.0,1.0,5.0,1.32
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,4.7,2.5,3.9,1.55
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,4.8,4.2,5.0,1.26
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,2.5,5.0,5.0,1.5
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,2.3,2.5,5.0,1.31
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,2.1,1.0,5.0,1.4
+With RAG,Graph RAG,Recursive,SentenceTransformers,ChromaDB,3.1,1.0,5.0,1.74
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,4.5,5.0,5.0,2.83
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,5.0,5.0,5.0,3.19
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,5.0,2.5,5.0,1.19
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,4.6,1.0,5.0,1.3
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,2.2,1.0,5.0,1.25
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,3.1,5.0,5.0,1.73
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,2.3,2.5,5.0,1.35
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,3.6,1.7,5.0,1.26
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,5.0,1.0,3.6,1.88
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,4.5,2.5,5.0,2.56
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,4.6,4.0,5.0,1.43
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,2.3,4.0,5.0,1.41
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,4.7,2.1,4.8,1.76
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,2.0,1.0,5.0,1.34
+With RAG,Graph RAG,Recursive,BGE embeddings,FAISS,4.8,1.7,5.0,1.92
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,4.5,3.8,5.0,1.77
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,2.79
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,5.0,1.2,5.0,1.28
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.2,5.0,1.56
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.41
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,2.3,5.0,5.0,1.28
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,1.9,1.0,5.0,1.41
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,4.4,1.7,5.0,1.22
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,1.46
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,5.0,1.2,5.0,1.7
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,4.8,5.0,5.0,1.6
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,2.0,5.0,5.0,1.37
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,4.0,5.0,5.0,1.55
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,3.1,1.0,5.0,1.66
+With RAG,Graph RAG,Recursive,BGE embeddings,ChromaDB,4.8,1.0,5.0,1.99
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,4.9,2.9,5.0,1.82
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,5.0,1.68
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,5.0,3.8,5.0,1.3
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,2.0,1.0,5.0,1.39
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,2.3,1.0,5.0,1.28
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,1.9,1.0,5.0,1.7
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,5.0,1.0,5.0,1.49
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,4.4,1.2,5.0,1.2
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,5.0,1.17
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,4.8,4.2,5.0,1.4
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,5.0,4.2,5.0,1.29
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,2.3,5.0,5.0,1.51
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,2.3,2.5,5.0,1.44
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,2.3,1.0,5.0,1.26
+With RAG,Graph RAG,Semantic,SentenceTransformers,FAISS,3.1,4.2,5.0,1.5
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.7,5.0,1.7
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,4.5,5.0,5.0,1.41
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,4.8,5.0,5.0,1.73
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,3.9,1.0,5.0,1.15
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,4.8,4.2,5.0,1.67
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,2.5,1.2,5.0,1.28
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.0,5.0,1.27
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,4.1,2.1,5.0,1.19
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,5.0,4.6,5.0,1.24
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,4.7,3.8,4.4,1.56
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,4.1,4.2,5.0,1.32
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,2.3,5.0,5.0,1.37
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,2.3,2.9,5.0,1.43
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,2.8,1.0,5.0,1.19
+With RAG,Graph RAG,Semantic,SentenceTransformers,ChromaDB,3.1,3.8,5.0,1.46
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.5,3.8,5.0,2.0
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.6,1.0,5.0,3.32
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,5.0,5.0,5.0,1.07
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.8,1.0,5.0,1.34
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,2.2,1.0,5.0,1.25
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,1.8,1.0,5.0,1.64
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,2.3,2.5,5.0,1.21
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.8,4.6,3.1,1.23
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,2.5,5.0,5.0,1.63
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.8,2.5,5.0,1.3
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.7,4.2,5.0,1.45
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,2.3,1.0,5.0,1.46
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.7,2.1,5.0,2.3
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,2.1,1.0,5.0,1.35
+With RAG,Graph RAG,Semantic,BGE embeddings,FAISS,4.2,4.2,5.0,1.65
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,5.0,4.2,5.0,2.41
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,5.0,1.2,5.0,1.8
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.16
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,5.0,3.8,5.0,1.31
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.7
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.44
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,1.9,1.7,5.0,1.17
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,4.8,1.2,4.0,1.25
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,2.5,5.0,5.0,1.29
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,4.8,2.5,5.0,1.33
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,4.8,5.0,5.0,1.24
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,2.3,1.0,5.0,1.65
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,4.7,5.0,5.0,1.89
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,2.1,1.0,5.0,1.4
+With RAG,Graph RAG,Semantic,BGE embeddings,ChromaDB,4.8,1.2,5.0,1.52
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,4.9,2.1,5.0,1.85
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,5.0,4.2,5.0,1.73
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,5.0,3.8,5.0,1.32
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,1.28
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,2.2,1.0,5.0,1.19
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,3.1,3.2,5.0,1.29
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,5.0,1.0,5.0,1.42
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,3.9,1.0,5.0,1.45
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,5.0,1.2,5.0,1.26
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,5.0,2.9,5.0,1.57
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,4.5,5.0,5.0,1.5
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,2.5,2.1,5.0,1.48
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,2.1,1.0,5.0,1.51
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,1.23
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,FAISS,5.0,5.0,5.0,1.56
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,5.0,2.1,5.0,1.78
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,5.0,4.0,5.0,1.91
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,4.8,5.0,5.0,1.31
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,1.6,1.0,5.0,1.35
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,4.8,1.0,5.0,2.07
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,2.5,1.2,5.0,1.37
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,4.6,1.0,5.0,2.41
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,3.1,1.2,5.0,1.22
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,4.8,1.0,5.0,1.37
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,5.0,2.5,5.0,1.49
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,4.5,5.0,5.0,1.68
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,2.5,4.6,5.0,1.44
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,2.1,1.7,5.0,1.52
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,2.1,1.7,5.0,10.91
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,2.8,1.0,5.0,1.57
+With RAG,Multimodal RAG,Fixed,SentenceTransformers,ChromaDB,5.0,5.0,5.0,1.36
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,4.0,5.0,5.0,10.67
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,1.54
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,5.0,2.9,5.0,1.17
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,5.0,1.7,5.0,1.33
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,2.5,1.0,5.0,1.48
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,2.5,1.0,5.0,1.28
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,2.3,2.5,5.0,1.75
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,4.8,5.0,4.0,1.45
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,5.0,5.0,5.0,1.1
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,5.0,1.0,5.0,1.31
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,5.0,3.8,5.0,1.44
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,2.3,5.0,5.0,1.48
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,4.6,2.1,4.6,1.83
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,2.2,1.0,5.0,1.25
+With RAG,Multimodal RAG,Fixed,BGE embeddings,FAISS,5.0,4.2,5.0,1.85
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,3.0,3.8,5.0,1.9
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,5.0,2.1,5.0,2.38
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.2,5.0,1.37
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.31
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,2.2,1.0,5.0,1.69
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,2.5,2.5,5.0,1.44
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,1.9,1.7,5.0,1.12
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,4.8,2.1,4.4,1.32
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,5.0,5.0,5.0,1.15
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.7,5.0,1.47
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,4.5,3.8,5.0,1.38
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,2.3,5.0,5.0,1.31
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,4.4,5.0,5.0,1.6
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,2.7,5.0,5.0,1.16
+With RAG,Multimodal RAG,Fixed,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.83
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,5.0,5.0,5.0,1.58
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,5.0,5.0,5.0,1.48
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,5.0,3.8,5.0,1.3
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,1.4,1.0,5.0,2.16
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,2.3,1.0,5.0,1.31
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,1.9,1.2,5.0,1.75
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,4.8,1.0,5.0,1.22
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,3.8,2.9,1.0,1.32
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,5.0,3.8,5.0,1.22
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,5.0,2.5,4.7,1.58
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,4.8,4.2,5.0,1.38
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,2.5,5.0,5.0,1.55
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,2.3,2.9,5.0,7144.63
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,2.3,2.9,5.0,12.69
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,2.2,1.0,5.0,1.39
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,FAISS,3.1,1.0,5.0,1.93
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,4.5,5.0,4.5,3.8
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,5.0,5.0,5.0,2.54
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,5.0,5.0,5.0,1.51
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,4.6,1.0,5.0,1.25
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,4.7,1.0,5.0,1.28
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,1.2,1.2,5.0,1.48
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,4.4,1.0,5.0,1.47
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,4.4,2.5,4.3,1.2
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,5.0,5.0,5.0,1.49
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,5.0,2.5,3.9,1.7
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,4.8,4.2,5.0,1.78
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,2.5,5.0,5.0,1.49
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,2.3,2.5,5.0,1.34
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,2.8,1.0,5.0,1.23
+With RAG,Multimodal RAG,Recursive,SentenceTransformers,ChromaDB,2.5,1.0,5.0,1.53
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.5,3.8,5.0,12.13
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.6,1.0,4.6,1.78
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,5.0,2.9,5.0,1.17
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.6,1.0,5.0,1.24
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,2.2,1.0,5.0,1.84
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,3.0,5.0,5.0,1.32
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,2.3,2.5,5.0,1.41
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,3.6,1.7,5.0,10.42
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.8,5.0,5.0,3.36
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.5,2.5,5.0,1.61
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.6,3.8,5.0,1.33
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,2.3,4.0,5.0,1.38
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.7,2.1,5.0,1.73
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,2.0,1.0,5.0,1.2
+With RAG,Multimodal RAG,Recursive,BGE embeddings,FAISS,4.8,1.0,5.0,1.9
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,4.5,3.8,5.0,2.56
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,2.52
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,5.0,2.1,5.0,1.38
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,3.0,1.2,5.0,1.63
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.0,5.0,2.57
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.96
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,2.3,5.0,5.0,1.76
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,1.9,1.0,5.0,1.37
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,4.4,1.7,5.0,1.3
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,5.0,5.0,5.0,1.53
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,5.0,1.2,5.0,1.58
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,4.8,5.0,5.0,1.48
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,2.0,1.0,5.0,1.33
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,4.6,5.0,5.0,1.87
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.16
+With RAG,Multimodal RAG,Recursive,BGE embeddings,ChromaDB,4.8,1.7,5.0,1.62
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,5.0,2.9,5.0,1.79
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,5.0,1.56
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,5.0,3.8,5.0,1.61
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,2.0,1.0,5.0,1.42
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,2.2,1.0,5.0,1.44
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,1.9,1.0,5.0,1.66
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,5.0,1.0,5.0,1.42
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,4.4,1.2,5.0,1.83
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,5.0,5.0,5.0,1.35
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,4.8,5.0,5.0,1.49
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,5.0,4.0,5.0,1.16
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,2.3,4.6,5.0,1.47
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,2.3,2.5,5.0,1.61
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,2.3,1.0,5.0,1.41
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,FAISS,3.1,5.0,5.0,1.57
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.7,5.0,1.73
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,5.0,5.0,5.0,1.69
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.0,5.0,1.77
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,4.5,5.0,5.0,1.65
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,4.8,5.0,5.0,1.33
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,1.9,1.0,5.0,1.3
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,4.8,1.0,5.0,1.15
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,2.4,1.0,5.0,1.57
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,5.0,1.0,5.0,1.39
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,4.4,1.0,5.0,1.2
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,5.0,4.6,5.0,1.36
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,4.7,3.8,4.4,1.44
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,4.3,5.0,5.0,2.01
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,2.3,4.6,5.0,1.37
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,2.3,2.5,5.0,1.34
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,2.8,1.0,5.0,1.57
+With RAG,Multimodal RAG,Semantic,SentenceTransformers,ChromaDB,3.1,3.8,5.0,1.63
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,4.5,3.8,5.0,1.88
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,4.5,5.0,5.0,1.77
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,5.0,2.5,5.0,1.07
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,4.9,1.0,5.0,1.48
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,2.2,1.0,5.0,1.19
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,1.8,1.0,5.0,1.72
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,2.3,2.5,5.0,1.37
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,4.8,4.6,3.8,1.6
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,2.5,1.0,5.0,1.27
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,5.0,2.5,5.0,1.35
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,4.6,3.8,5.0,1.37
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,2.2,1.2,5.0,1.44
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,4.7,2.1,5.0,2.13
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,1.7,1.0,5.0,1.16
+With RAG,Multimodal RAG,Semantic,BGE embeddings,FAISS,4.6,4.2,5.0,1.44
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,4.5,4.2,5.0,1.91
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,5.0,5.0,5.0,1.71
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.53
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,5.0,1.0,5.0,1.26
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.68
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,2.5,1.0,5.0,1.34
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,1.9,1.0,5.0,1.3
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,4.8,1.2,3.8,1.33
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,5.0,2.5,5.0,1.37
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,4.8,2.5,5.0,1.43
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,4.8,5.0,5.0,1.32
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,2.4,1.0,5.0,1.77
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,4.9,5.0,5.0,1.55
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,2.7,1.0,5.0,1.28
+With RAG,Multimodal RAG,Semantic,BGE embeddings,ChromaDB,4.7,1.2,5.0,1.67
 Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.0
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.53
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.65
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.94
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.35
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.46
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.31
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.37
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.61
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.24
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.37
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.81
-Without RAG (Baseline),None,None,None,None,4.4,1.0,1.0,1.38
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.57
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.59
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.69
-Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.61
-Without RAG (Baseline),None,None,None,None,3.3,1.0,1.0,1.56
+Without RAG (Baseline),None,None,None,None,4.4,1.0,1.0,1.78
 Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.27
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.24
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.45
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.29
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.27
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.52
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.14
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.61
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.49
 Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.86
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,3.3,1.0,5.0,11.91
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,5.0,5.0,10.02
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.8,1.2,5.0,12.01
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.7,1.0,5.0,9.21
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.5,1.0,5.0,10.94
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,10.56
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.7,1.0,5.0,9.56
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,5.0,2.5,4.4,10.55
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.6,1.0,5.0,11.16
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,3.7,1.2,5.0,16.24
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,8.88
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,13.55
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.2,1.0,4.3,9.22
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,2.5,1.0,5.0,12.88
-With RAG,Naive RAG,Fixed,SentenceTransformers,FAISS,4.6,1.0,3.8,12.4
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.59
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,1.31
+Without RAG (Baseline),None,None,None,None,5.0,1.0,1.0,2.07

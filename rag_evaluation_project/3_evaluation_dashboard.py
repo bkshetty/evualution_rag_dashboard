@@ -22,7 +22,9 @@ from deepeval.models.base_model import DeepEvalBaseLLM
 import warnings
 warnings.filterwarnings("ignore")
 
-load_dotenv(override=True)
+# Robust .env loading relative to script path
+script_dir = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(dotenv_path=os.path.join(script_dir, ".env"), override=True)
 
 # ==========================================
 # 1. APP STATE & CONFIGURATION
@@ -79,8 +81,15 @@ class GroqFallbackLLM(DeepEvalBaseLLM):
                     else:
                         return llm.invoke(prompt).content
                 except Exception as e:
-                    print(f"      [!] Key {key[:8]}... failed: {e}")
-                    continue # Instantly try the next key
+                    error_msg = str(e)
+                    # If the key is permanently dead, print a warning and swap to the next key
+                    if "401" in error_msg or "invalid_api_key" in error_msg:
+                        print(f"      [!] Key {key[:8]}... is INVALID (401). Skipping this key.")
+                        continue
+                        
+                    # Otherwise, it's just a rate limit or formatting error, so swap keys
+                    print(f"      [!] Key {key[:8]}... failed: {error_msg}")
+                    continue
             
             # If the code reaches this line, ALL 4 KEYS ARE EXHAUSTED.
             # Instead of crashing, we trigger the Anti-Crash Cooldown.
@@ -93,6 +102,11 @@ class GroqFallbackLLM(DeepEvalBaseLLM):
 
     def get_model_name(self):
         return "Groq-" + self.model_name
+
+
+@st.cache_resource
+def get_embedder(model_name: str):
+    return HuggingFaceEmbeddings(model_name=model_name)
 
 # ==========================================
 # 3. DEDICATED ROOT PIPELINES
@@ -111,7 +125,7 @@ def pipeline_with_rag(query: str, llm_engine: GroqFallbackLLM, chunking: str, em
     
     # 1. Map to specific Embedding Model (uses bge-small to match 2_build_databases.py)
     embed_model_name = "BAAI/bge-small-en-v1.5" if embedding == "BGE embeddings" else "all-MiniLM-L6-v2"
-    embedder = HuggingFaceEmbeddings(model_name=embed_model_name)
+    embedder = get_embedder(embed_model_name)
     
     # 2. Map to exact database folder path dynamically
     c_str = chunking.lower()
@@ -140,7 +154,7 @@ def pipeline_with_rag(query: str, llm_engine: GroqFallbackLLM, chunking: str, em
         except Exception as test_err:
             if "dimension" in str(test_err).lower() or "384" in str(test_err):
                 # Crash detected! Swapping to 384-dimension model to save the run
-                embedder = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+                embedder = get_embedder("all-MiniLM-L6-v2")
                 if d_str == "chroma":
                     vectorstore = Chroma(persist_directory=db_path, embedding_function=embedder)
                 else:
@@ -288,7 +302,7 @@ with tab2:
                 progress_bar = st.progress(0)
                 status_text = st.empty()
                 
-                # THE FIX: Generator stays 8B for speed. Judge MUST be 70B to prevent JSON Tool crashes.
+                # Generator stays 8B for speed. Judge is 70B to ensure maximum grading accuracy for research evaluation.
                 evaluator_llm_judge = GroqFallbackLLM("llama-3.3-70b-versatile")
                 generator_llm = GroqFallbackLLM("llama-3.1-8b-instant")
                 
@@ -376,6 +390,7 @@ with tab2:
                         st.markdown(f"**Metrics:** Acc: `{single_result['Answer Accuracy']}` | Prec: `{single_result['Retrieval Precision']}` | Hallucination Red: `{single_result['Hallucination Reduction']}` | Time: `{round(latency,2)}s`")
                         
                     progress_bar.progress((i + 1) / len(df_test))
+                    time.sleep(5) # Delay to prevent hitting Groq's Tokens Per Minute (TPM) limits
                     
                 st.session_state.eval_results = current_results
                 st.success(f"✅ DeepEval Sequence Complete! All {len(df_test)} pairs safely logged to {log_file_path}.")
